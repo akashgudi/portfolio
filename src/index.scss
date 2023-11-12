@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+:root{ 
+ --background-color : #393939;
+ --text-primary : #f2f2f2;
+ --page-padding: 20px;
+}
+
+
+h1,h2,h3,h4 {
+  font-weight: 400;
+  font-family: 'DM Serif Display', serif;
+}
+
+* {
+  padding: 0;
+  color: var(--text-primary);
+  border: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+    
+  display: grid;
+  grid-template-columns: [full-width-start] var(--page-padding)  [content-start] 1fr [content-end] var(--page-padding)  [full-width-end];
+
+}
+
+
+body {
+  margin-top: var(--page-padding);
+  background-color: var(--background-color);
+}
+
+
